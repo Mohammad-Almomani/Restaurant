@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Resturant</title>
+    <link rel="icon" href="./assets/logo.png" type="image/icon type">
+</head>
+<body>
+    <header> 
+         <div class="top_nav_bar">
+    <img class="logo" src="./assets/logo.png" alt="logo" width="30" />
+    <a class="title">Resturant</a>
+    <input id="search" type="search " id="search" placeholder="search for an item">
+</div>
+    </header>
+    <main id="main">
+        <div id="formDiv">
+        <form id="foodForm">
+            <a>
+    <label for="foodName"><b>Food Name</b></label>
+    <input type="text" placeholder="Enter food name" name="foodName" id="foodName" required>
+            </a>
+            <a>
+    <label for="foodTypes"><b>Type of the food</b></label>
+    <select name="foodTypes" id="foodTypes">
+        <option value="Fruit and vegetables">Fruit and vegetables</option>
+        <option value="Starchy food">Starchy food</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Protein">Protein</option>
+        <option value="Fat">Fat</option>
+      </select>
+    </a>
+    <a>
+    <label for="price"><b>Price</b></label>
+    <input type="number" min="0" step="0.01" placeholder="Enter the price" name="price" id="price" required>
+    </a>
+    <a>
+        <label for="imgUrl"><b>Image URL</b></label>
+        <input type="url" placeholder="add image link (optional)" name="imgUrl" id="imgUrl">
+    </a>
+    
+    <input type="submit" value="Add Item">
+        </form>
+    </div>
+    <div id="table">
+    </div>
+
+    </main>
+    <footer class="fot_nav_bar" >
+        <div class="fot_nav_items">
+            <br><br>
+            <input class="footer-nav-icons spacing" type="image" src="./assets/facebook.jpg" alt="our-facebook-page" width="35" height="30" />
+           <div>
+            <input type="image" src="./assets/email.jpg"width="35" height="25" alt="our-email">
+            <a class="footer-nav-icons spacing" style="font-size: x-large ;">resturant@gmail.com</a>
+        </div>
+            <div>
+            <input class="footer-nav-icons spacing" type="image" src="./assets/copyright.jpg" alt="contact-number" width="30" height="20" />
+            <a style="font-size: x-large ;">Resturant</a>
+        </div>
+        </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
