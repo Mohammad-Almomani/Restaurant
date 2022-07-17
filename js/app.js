@@ -1,6 +1,7 @@
 "use strict";
 
-let foodMenu = [];
+// declare an array to save instances in, an integer for the id and an array to save date from the form in it
+let foodMenu = [], foodId = 0, foodArray = [];
 // create constructor for the menu
 function menuGenerator(id, name, type, price, imgUrl) {
     this.ID = id;
@@ -11,15 +12,9 @@ function menuGenerator(id, name, type, price, imgUrl) {
     foodMenu.push(this)
 }
 
-// declare an integer for the id and an array to save date from the form in it
-let foodId = 0, foodArray = [];
 // get the form and add event listener to it
 const foodFrom = document.getElementById("foodForm");
 foodFrom.addEventListener("submit", handleFood);
-
-const table = document.getElementById("table")
-const tableForm = document.createElement('table')
-table.append(tableForm)
 
 // create the event listener function to push our data into foodArray each time the user press submit
 function handleFood(event) {
