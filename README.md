@@ -6,3 +6,6 @@ created the main page and did the logic for it, and then added some styling for 
 ## day 12
  created the statistics page and did the logic for it, and then added some styling for it
 
+ ## day 13 
+ added charts
+
