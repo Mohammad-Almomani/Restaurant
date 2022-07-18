@@ -67,9 +67,6 @@ function createTable(parsedMenu) {
         raw.append(tableClm)
         const foodImg = document.createElement("img")
         foodImg.src = `${parsedMenu[i][fill[4]]}`
-        if (parsedMenu[i][fill[4]] == '') {
-            foodImg.src = '../assets/logo.png'
-        }
         foodImg.setAttribute("style", "width:40px")
         tableClm.append(foodImg)
     }
